@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Page2</title>
+    <link href="http://fonts.googleapis.com/css?family=Poiret+One%7CMarvel%7CJulius+Sans+One" rel="stylesheet">
+
+    <script src="js/help.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href= "http://normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="js/skrollr.min.js">
+
+<!--    <script type="text/javascript">
+parallex();
+    var ypos, image;
+    function parallex() {
+        ypos= window.pageYOffset;
+        image = document.getElementById("aboutMeDiv");
+        image.style.top = ypos * .4 + 'px';
+    };
+    window.addEventListener('scroll',parallex);
+</script>-->
+
+</head>
+<body>
+    <nav></nav>
+    <img id="bkgImage" class="bkgImage" src="images/Matthewfinal.jpg">
+    <div id="aboutMeDiv" class="section1"></div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script src="js/help.js"></script>
+<script type="text/javascript">
+    var ypos, image;
+    function parallex() {
+        ypos= window.pageYOffset;
+        image = document.getElementById('bkgImage');
+        image.style.top = ypos * .9 + 'px';
+    };
+    window.addEventListener('scroll',parallex);
+    parallex();
+</script>
+</body>
+</html>
